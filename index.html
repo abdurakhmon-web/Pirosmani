@@ -16,6 +16,7 @@
 <body>
   <div class="wrapper">
     <button data-bs-toggle="modal" data-bs-target="#register">Регистрация</button>
+    <button data-bs-toggle="modal" data-bs-target="#subscribe">Subscribe</button>
     <header>
       <div class="container">
         <div class="row">
@@ -693,6 +694,7 @@
             <div class="inpb">
               <input class="pass" name="" type="password" placeholder="Пароль">
             </div>
+            <div class="error-txt">Не правильный логин или пароль</div>
             <div class="forgot-pass">Забыли пароль?</div>
             <button>Войти</button>
           </form>
@@ -728,6 +730,7 @@
             <div class="inpb">
               <input class="pass" name="" type="password" placeholder="Подтвердите пароль">
             </div>
+            <div class="error-txt">Пользователь с таким номером телефона уже зарегистрирован.</div>
             <div class="check-block">
               <div class="line">
                 <input type="checkbox" id="r-mail">
@@ -739,6 +742,31 @@
               </div>
             </div>
             <button>Зарегистрироваться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal-subscribe -->
+
+<div class="modal fade" id="subscribe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="top-modal">
+          <img src="./img/mail-icon.svg" alt="">
+          <div class="modal-name">Подпишитесь на нашу рассылку и получите промокод на 500 RUB!</div>
+        </div>
+        <div class="form">
+          <form action="" method="post">
+            <div class="inpb">
+              <input class="email" name="" type="email" placeholder="E-mail">
+            </div>
+            <button>Отправить</button>
           </form>
         </div>
       </div>

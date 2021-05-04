@@ -28,7 +28,7 @@ body {
 
     &.modal-big {
         max-width: 654px;
-        max-width: 654px;
+        width: 654px;
 
         .modal-content {
             padding: 40px 56px 27px;
@@ -159,43 +159,65 @@ body {
                     &.pass {
                         background-image: url(../img/modal-key.svg);
                     }
+
+                    &.email{
+                        background-image: url(../img/mail-icon-input.svg);
+                    }
                 }
             }
 
+            .error-txt{
+                font-size: 10px;
+                line-height: 15px;
+                text-align: center;
+                color: #EB5757;
+                margin-bottom: 13px;
+            }
+
             .check-block {
+                margin-bottom: 38px;
                 .line {
                     display: flex;
                     font-size: 11px;
                     line-height: 14px;
                     color: #C6C6C6;
-                    margin-bottom: 16px;
+                    margin-bottom: 15px;
 
                     input {
                         position: relative;
-
+                        display: none;
                         &:checked {
+                           ~ label{
                             &:before {
                                 background: #00AC4E;
                                 border: 2px solid #EBEBEB;
                             }
+                           }
                         }
 
-                        &:before {
-                            content: '';
-                            width: 15px;
-                            height: 15px;
-                            border-radius: 50%;
-                            background: #FCFCFC;
-                            border: 2px solid #EBEBEB;
-                            box-sizing: border-box;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                        }
-                    }
+                        ~ label{
+                            margin-left: 30px;
+                            position: relative;
+                            margin-bottom: 0;
 
-                    label {
-                        margin-left: 15px;
+                            a{
+                                color: #00AC4E;
+                                text-decoration: none;
+                            }
+
+                            &:before {
+                                content: '';
+                                width: 15px;
+                                height: 15px;
+                                border-radius: 50%;
+                                background: #FCFCFC;
+                                border: 2px solid #EBEBEB;
+                                box-sizing: border-box;
+                                position: absolute;
+                                top: 0;
+                                left: -30px;
+                            }
+                        }
                     }
                 }
             }

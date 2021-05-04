@@ -24,6 +24,7 @@ body {
 }
 .modal-dialog.modal-big {
   max-width: 654px;
+  width: 654px;
 }
 .modal-dialog.modal-big .modal-content {
   padding: 40px 56px 27px;
@@ -130,21 +131,44 @@ body {
 .modal-dialog .modal-content .form .inpb input.pass {
   background-image: url(../img/modal-key.svg);
 }
+.modal-dialog .modal-content .form .inpb input.email {
+  background-image: url(../img/mail-icon-input.svg);
+}
+.modal-dialog .modal-content .form .error-txt {
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  color: #EB5757;
+  margin-bottom: 13px;
+}
+.modal-dialog .modal-content .form .check-block {
+  margin-bottom: 38px;
+}
 .modal-dialog .modal-content .form .check-block .line {
   display: flex;
   font-size: 11px;
   line-height: 14px;
   color: #C6C6C6;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 .modal-dialog .modal-content .form .check-block .line input {
   position: relative;
+  display: none;
 }
-.modal-dialog .modal-content .form .check-block .line input:checked:before {
+.modal-dialog .modal-content .form .check-block .line input:checked ~ label:before {
   background: #00AC4E;
   border: 2px solid #EBEBEB;
 }
-.modal-dialog .modal-content .form .check-block .line input:before {
+.modal-dialog .modal-content .form .check-block .line input ~ label {
+  margin-left: 30px;
+  position: relative;
+  margin-bottom: 0;
+}
+.modal-dialog .modal-content .form .check-block .line input ~ label a {
+  color: #00AC4E;
+  text-decoration: none;
+}
+.modal-dialog .modal-content .form .check-block .line input ~ label:before {
   content: '';
   width: 15px;
   height: 15px;
@@ -154,10 +178,7 @@ body {
   box-sizing: border-box;
   position: absolute;
   top: 0;
-  left: 0;
-}
-.modal-dialog .modal-content .form .check-block .line label {
-  margin-left: 15px;
+  left: -30px;
 }
 header {
   background: #fff;

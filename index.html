@@ -17,6 +17,8 @@
   <div class="wrapper">
     <button data-bs-toggle="modal" data-bs-target="#register">Регистрация</button>
     <button data-bs-toggle="modal" data-bs-target="#subscribe">Subscribe</button>
+    <button data-bs-toggle="modal" data-bs-target="#check-phone">check-phone</button>
+    <button data-bs-toggle="modal" data-bs-target="#reviews">reviews</button>
     <header>
       <div class="container">
         <div class="row">
@@ -750,6 +752,40 @@
 </div>
 
 
+<!-- Modal-check-phone -->
+
+<div class="modal fade" id="check-phone" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="top-modal">
+          <img src="./img/modal-user.svg" alt="">
+          <div class="modal-name">Подтвердите номер телефона</div>
+        </div>
+        <div class="form">
+          <form action="" method="post">
+            <div class="inpb digit">
+              <input name="" type="text" maxlength="1">
+              <span></span>
+              <input name="" type="text" maxlength="1">
+              <span></span>
+              <input name="" type="text" maxlength="1">
+              <span></span>
+              <input name="" type="text" maxlength="1">
+            </div>
+            <div class="sent-check">  <!-- смена состояния при добавлении класса active к sent-check -->
+              <span>Отправить повторно</span> <b>1:59</b>
+              <button>Далее</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!-- Modal-subscribe -->
 
 <div class="modal fade" id="subscribe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -796,6 +832,43 @@
               <input name="" type="date" placeholder="Дата:  дд.мм.гг">
             </div>
             <button>Забронировать</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal-reviews -->
+
+<div class="modal fade" id="reviews" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog reviews">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="rev-top">Добавить отзыв</div>
+        <div class="form">
+          <form action="" method="post">
+            <div class="line-rev">
+              <b>Ваша оценка:</b>
+              <div class="rating">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+              </div>
+            </div>
+            <div class="inpb line-rev">
+              <b>Ваше имя:</b>
+              <input class="rev-input" name="" type="text" placeholder="Введите Ваше имя">
+            </div>
+            <div class="inpb line-rev align-items-start">
+              <b>Ваш отзыв:</b>
+              <textarea name=""></textarea>
+            </div>
+            <button class="rev-btn">Добавить отзыв</button>
           </form>
         </div>
       </div>

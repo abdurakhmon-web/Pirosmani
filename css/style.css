@@ -75,6 +75,55 @@ body {
   color: #000000;
   margin-top: 13px;
 }
+.modal-dialog .modal-content .form .line-rev {
+  display: flex;
+  align-items: center;
+  /* .rev-btn{
+                    width: 94px;
+                    height: 30px;
+                    background: #00AC4E;
+                    border-radius: 6px;
+                    font-weight: 500;
+                    font-size: 10px;
+                    line-height: 14px;
+                    text-align: center;
+                    color: #FFFFFF;
+                } */
+}
+.modal-dialog .modal-content .form .line-rev .rating span {
+  background: url(../img/star-2.svg);
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+}
+.modal-dialog .modal-content .form .line-rev .rating span.active {
+  background: url(../img/star.svg);
+}
+.modal-dialog .modal-content .form .line-rev b {
+  font-size: 11px;
+  line-height: 12px;
+  color: #000000;
+  margin-right: 10px;
+}
+.modal-dialog .modal-content .form .line-rev .rev-input {
+  padding: 10px 0 10px 16px;
+  width: 177px;
+  height: 33px;
+  background: #FCFCFC;
+  border: 1px solid #EBEBEB;
+  box-sizing: border-box;
+  font-size: 10px;
+  line-height: 12px;
+  color: #C6C6C6;
+  margin-left: 16px;
+}
+.modal-dialog .modal-content .form .line-rev textarea {
+  width: 221px;
+  height: 99px;
+  border: 1px solid #EBEBEB;
+  box-sizing: border-box;
+  margin-left: 11px;
+}
 .modal-dialog .modal-content .form button {
   border: none;
   height: 45px;
@@ -110,6 +159,37 @@ body {
   text-align: center;
   cursor: pointer;
 }
+.modal-dialog .modal-content .form .sent-check {
+  text-align: center;
+}
+.modal-dialog .modal-content .form .sent-check.active button {
+  background: #00AC4E;
+}
+.modal-dialog .modal-content .form .sent-check.active span {
+  color: #00AC4E;
+}
+.modal-dialog .modal-content .form .sent-check.active b {
+  display: none;
+}
+.modal-dialog .modal-content .form .sent-check span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: underline;
+  color: #BDBDBD;
+}
+.modal-dialog .modal-content .form .sent-check b {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  margin-left: 10px;
+}
+.modal-dialog .modal-content .form .sent-check button {
+  margin-top: 30px;
+  background: #e0e0e0;
+}
 .modal-dialog .modal-content .form .inpb input {
   width: 100%;
   height: 50px;
@@ -133,6 +213,32 @@ body {
 }
 .modal-dialog .modal-content .form .inpb input.email {
   background-image: url(../img/mail-icon-input.svg);
+}
+.modal-dialog .modal-content .form .inpb.digit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin: 0 auto;
+}
+.modal-dialog .modal-content .form .inpb.digit input {
+  background: #FCFCFC;
+  border: 1px solid #EBEBEB;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 33px;
+  height: 47px;
+  font-size: 24px;
+  line-height: 16px;
+  color: #000000;
+  text-align: center;
+  padding: 0;
+}
+.modal-dialog .modal-content .form .inpb.digit span {
+  width: 7px;
+  height: 1px;
+  background: #343E48;
+  margin: 0 6px;
 }
 .modal-dialog .modal-content .form .error-txt {
   font-size: 10px;
